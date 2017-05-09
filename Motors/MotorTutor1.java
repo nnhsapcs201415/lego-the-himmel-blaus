@@ -10,9 +10,9 @@ public class MotorTutor1
         Button.waitForAnyPress();
         LCD.clear();
         Motor.A.forward();
-        LCD.drawString("FORWARD", 0, 0);
+        LCD.drawString("CHIRAG BACKWARDS IS", 0, 0);
         Button.waitForAnyPress();
-        LCD.drawString("BACKWARD", 0, 0);
+        LCD.drawString("GARIHC", 0, 0);
         Motor.A.backward();
         Button.waitForAnyPress();
         Motor.A.stop();
