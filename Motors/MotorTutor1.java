@@ -9,12 +9,15 @@ public class MotorTutor1
         LCD.drawString("Program 1", 0, 0);
         Button.waitForAnyPress();
         LCD.clear();
-        Motor.A.forward();
-        LCD.drawString("CHIRAG BACKWARDS IS", 0, 0);
+        Motor.B.forward();
+        Motor.C.forward();
+        LCD.drawString("FORWARD", 0, 0);
         Button.waitForAnyPress();
-        LCD.drawString("GARIHC FORWARDS IS", 0, 0);
-        Motor.A.backward();
+        LCD.drawString("BACKWARD", 0, 0);
+        Motor.B.backward();
+        Motor.C.backward();
         Button.waitForAnyPress();
-        Motor.A.stop();
+        Motor.B.stop();
+        Motor.C.stop();
     }
 }
