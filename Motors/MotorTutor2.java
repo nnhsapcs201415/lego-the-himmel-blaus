@@ -13,7 +13,7 @@ public class MotorTutor2 {
     {
         LCD.drawString("Program 2", 0, 0);
         Button.waitForAnyPress();
-        Motor.A.setSpeed(720);
+        Motor.A.setSpeed(180);
         Motor.A.forward();
         LCD.clear();
         Delay.msDelay(2000);

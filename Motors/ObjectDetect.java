@@ -19,4 +19,4 @@ public class ObjectDetect implements FeatureListener {
         Sound.playTone(1200 - (range * 10), 100);
         System.out.println("Range:" + range);
     }
-} 
+}
