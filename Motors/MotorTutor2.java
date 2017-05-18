@@ -15,15 +15,14 @@ public class MotorTutor2 {
         Button.waitForAnyPress();
         Motor.A.setSpeed(180);
         Motor.A.forward();
-        LCD.clear();
+        //LCD.clear();
         Delay.msDelay(2000);
         LCD.drawInt(Motor.A.getTachoCount(),0,0);
-        Motor.A.stop();
         LCD.drawInt(Motor.A.getTachoCount(),0,1);
         Motor.A.backward();
-        while (Motor.A.getTachoCount()>0); 
+        //while (Motor.A.getTachoCount()>0); 
         LCD.drawInt(Motor.A.getTachoCount(),0,2);
-        Motor.A.stop();
+        //Motor.A.stop();
         LCD.drawInt(Motor.A.getTachoCount(),0,3);
         Button.waitForAnyPress();
     }
