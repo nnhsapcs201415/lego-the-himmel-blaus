@@ -12,8 +12,8 @@ public class MotorTutor2 {
     public static void main(String[] args) 
     {
         LCD.drawString("Program 2", 0, 0);
-        Button.waitForAnyPress();
-        Motor.A.setSpeed(160);
+        //Button.waitForAnyPress();
+        Motor.A.setSpeed(150);
         Motor.A.backward();
         //Button.waitForAnyPress();
         //LCD.clear();
@@ -25,6 +25,6 @@ public class MotorTutor2 {
         LCD.drawInt(Motor.A.getTachoCount(),0,2);
         //Motor.A.stop();
         LCD.drawInt(Motor.A.getTachoCount(),0,3);
-        Button.waitForAnyPress();
+        //Button.waitForAnyPress();
     }
 }

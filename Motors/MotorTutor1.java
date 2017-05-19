@@ -7,17 +7,19 @@ public class MotorTutor1
     public static void main(String[] args)
     {
         LCD.drawString("Program 1", 0, 0);
-        Button.waitForAnyPress();
+        //Button.waitForAnyPress();
         LCD.clear();
+        Motor.B.setSpeed(300);
+        Motor.C.setSpeed(300);
         Motor.B.forward();
         Motor.C.forward();
         LCD.drawString("FORWARD", 0, 0);
-        Button.waitForAnyPress();
+        //Button.waitForAnyPress();
         LCD.drawString("BACKWARD", 0, 0);
-        Motor.B.backward();
-        Motor.C.backward();
-        Button.waitForAnyPress();
-        Motor.B.stop();
-        Motor.C.stop();
+        // Motor.B.backward();
+        //Motor.C.backward();
+        //Button.waitForAnyPress();
+        //Motor.B.stop();
+        //Motor.C.stop();
     }
 }

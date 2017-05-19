@@ -5,14 +5,20 @@ import lejos.nxt.TouchSensor;
 public class TouchTest {
     public static void main(String[] args) throws Exception {
         TouchSensor touch = new TouchSensor(SensorPort.S1);
-        if(!touch.isPressed()) {
-
-        }
-        else
+        boolean isRunning = true;
+        while( isRunning )
         {
-            String[] list = new String[0];
-            MotorTutor2.main(list);
+            while(!touch.isPressed()) 
+            {
+                String[] luist = new String[0];
+                MotorTutor1.main(luist);
+            }
+            while( touch.isPressed())
+            {
+                String[] list = new String[0];
+                MotorTutor2.main(list);
+                LCD.drawString("Finished", 3, 4);
+            }
         }
-        LCD.drawString("Finished", 3, 4);
     }
 }
