@@ -14,7 +14,7 @@ public class SquareTracer
         for(int i = 0; i<4 ; i++)
         {
             pilot.travel(length);
-            pilot.rotate(90);                 
+            pilot.rotate(80);                 
         }
     }
     
@@ -22,6 +22,6 @@ public class SquareTracer
     {
         SquareTracer sq = new SquareTracer();
         sq.pilot = new DifferentialPilot(2.25f, 5.5f, Motor.B, Motor.C);
-        sq.drawSquare(20);
+        sq.drawSquare(15);
     }
 }
