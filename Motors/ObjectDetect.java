@@ -12,6 +12,7 @@ public class ObjectDetect implements FeatureListener {
         UltrasonicSensor us = new UltrasonicSensor(SensorPort.S4);
         RangeFeatureDetector fd = new RangeFeatureDetector(us, MAX_DETECT, 500);
         fd.addListener(listener);
+        Button.waitForAnyPress();
     }
 
     public void featureDetected(Feature feature, FeatureDetector detector) {
@@ -19,9 +20,10 @@ public class ObjectDetect implements FeatureListener {
         Sound.playTone(1200 - (range * 10), 100);
         System.out.println("Range:" + range);
     }
-    
+    /*
     public static int getRange()
     {
         return range;
     }
+    */
 }
